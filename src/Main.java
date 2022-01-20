@@ -1,11 +1,28 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hi");
-
-        int num = 5;
-        int num2 = 6;
-
-        int result = num - num2;
-        System.out.println("Result: " + result);
+        Scanner scanner = new Scanner(System.in);
+        String week;
+        System.out.println("Enter day number:");
+        int day = scanner.nextInt();
+        if (day  == 1) {
+            week = "Monday";
+        } else if (day == 2) {
+            week = "Tuesday";
+        } else if (day == 3) {
+            week = "Wednesday";
+        } else if (day == 4) {
+            week = "Thursday";
+        }else if (day == 5) {
+            week = "Friday";
+        } else if (day == 6) {
+            week = "Saturday";
+        } else if (day == 7) {
+            week = "Sunday";
+        } else {
+            week = "404";
+        }
+        System.out.println("Day of the week:" + week);
     }
 }
