@@ -6,6 +6,7 @@ public class Main {
         String week;
         System.out.println("Enter day number:");
         int day = scanner.nextInt();
+
         if (day  == 1) {
             week = "Monday";
         } else if (day == 2) {
