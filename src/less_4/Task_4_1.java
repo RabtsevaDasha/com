@@ -1,4 +1,4 @@
-package task;
+package less_4;
 
 public class Task_4_1 {
     public static void main(String[] args) {
