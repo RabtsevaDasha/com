@@ -2,12 +2,14 @@ package task;
 
 public class Home {
     public static void main(String[] args) {
+        int hr = 0;
+        int amb = 1;
 
+        for (int i = 1; i <= 8; i++) {
+            amb *= 2;
+            hr += 3;
+            System.out.println("Количество амёб через " + hr + " часов будет " + amb);
 
-        for (int i = 2; i < 21; i = i +2){
-            System.out.println("Амёб: " + i);
-        } for (int b = 3; b < 25; b = b + 3) {
-            System.out.println("Часов: " + b);
         }
-    } //мне кажется выводит не совсем правильно, в плане оформления
+    }
 }
