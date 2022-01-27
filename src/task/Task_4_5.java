@@ -1,6 +1,6 @@
 package task;
 
-public class home5 {
+public class Task_4_5 {
     public static void main(String[] args) {
        String q = "   ** ";
        String w = "  ****";

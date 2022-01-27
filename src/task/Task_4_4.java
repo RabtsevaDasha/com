@@ -1,6 +1,6 @@
 package task;
 
-public class home4 {
+public class Task_4_4 {
     public static void main(String[] args) {
         float distance = 10;
         for (int day = 2; day <= 7; day++){

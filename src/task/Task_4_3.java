@@ -1,6 +1,6 @@
 package task;
 
-public class home3 {
+public class Task_4_3 {
     public static void main(String[] args) {
         int i;
 

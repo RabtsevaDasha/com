@@ -1,6 +1,6 @@
 package task;
 
-public class Home {
+public class Task_4_1 {
     public static void main(String[] args) {
         int hr = 0;
         int amb = 1;
