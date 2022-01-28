@@ -1,4 +1,5 @@
 package less_5;
+//Вычислить: 1+2+4+8+...+256
 
 public class Task_5_1 {
     public static void main(String[] args) {
