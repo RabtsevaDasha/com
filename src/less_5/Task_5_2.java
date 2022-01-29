@@ -3,16 +3,11 @@ package less_5;
 
 public class Task_5_2 {
     public static void main(String[] args) {
-        int i = 1;
-        final int max = 100;
-        while (i <= max) {
-            i++;
-            {
-                if (i % 2 != 0)
-                    continue;
-                System.out.print(i + " ");
-            }
-        } System.out.print(" - are even numbers");
+        int i = 0;
+        int limit = 100;
+        while (i <= limit) {
+           i += 2;
+        } System.out.print(i);
 
     }
 }
