@@ -6,21 +6,21 @@ public class exam_1 {
     public static void main(String[] args) {
         System.out.println("Введите два числа: ");
         Scanner sc = new Scanner(System.in);
-        int num1;
-        int num2;
-        int answ;
-        char op;
-        num1 = sc.nextInt();
-        num2 = sc.nextInt();
+        double num1;
+        double num2;
+        double answ;
+        String op;
+        num1 = sc.nextDouble();
+        num2 = sc.nextDouble();
         System.out.print("\nEnter an operator (+, -, *, /): ");
-        op = sc.next().charAt(0);
+        op = sc.next();
         //use text formatting
         switch (op){
-            case '+': answ = num1 + num2; break;
-            case '-': answ = num1 - num2; break;
-            case '*': answ = num1 * num2; break;
+            case "+": answ = num1 + num2; break;
+            case "-": answ = num1 - num2; break;
+            case "*": answ = num1 * num2; break;
                 //if we divide 2 int numbers, then we will lose some data. Use double instead. And what if num2 is 0?
-            case '/': answ = num1 / num2; break;
+            case "/": answ = num1 / num2; break;
             default:  System.out.printf("Error! Enter correct operator");
                 return;
         }
