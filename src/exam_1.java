@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class exam_1 {
     public static void main(String[] args) {
-        System.out.println("Введите два числа: ");
+        System.out.println("Enter two numbers: ");
         Scanner sc = new Scanner(System.in);
         double num1;
         double num2;
@@ -21,13 +21,21 @@ public class exam_1 {
             case "*": answ = num1 * num2; break;
                 //if we divide 2 int numbers, then we will lose some data. Use double instead. And what if num2 is 0?
             case "/": answ = num1 / num2; break;
-            default:  System.out.printf("Error! Enter correct operator");
+            default:  System.out.print("Error! Enter correct operator");
                 return;
         }
         System.out.print("\nThe result is given as follows:\n");
-        System.out.printf(num1 + " " + op + " " + num2 + " = " + answ);
+        System.out.print(num1 + " " + op + " " + num2 + " = " + answ);
           //you do not have a loop! Your's program will just finish, but I need it to work till I enter stop word
         System.out.println("\nDo you want to continue?\n");
-
+        String ans2 = sc.nextLine();
+        System.out.println(ans2);
+        op = sc.nextLine();
+        if(ans2.contains("Yes")|| ans2.contains("yes")){
+            return;
+        }
+        if(ans2.contains("No") || ans2.contains("no")){
+            System.out.println("You are done calculating!");
+        }
     }
 }
