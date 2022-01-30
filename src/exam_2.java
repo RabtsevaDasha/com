@@ -6,7 +6,7 @@ public class exam_2 {
          System.out.println("Введите ваше число: ");
          Scanner sc = new Scanner(System.in);
          int num = sc.nextInt();
-
+// //What did I say at the previous lesson? We could do it in 1 loop!
          int sum1 = 0;
          for (int i = 1; i < num; i++){
              sum1+=i;
