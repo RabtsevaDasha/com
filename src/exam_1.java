@@ -26,6 +26,7 @@ public class exam_1 {
         }
         System.out.print("\nThe result is given as follows:\n");
         System.out.printf(num1 + " " + op + " " + num2 + " = " + answ);
+          //you do not have a loop! Your's program will just finish, but I need it to work till I enter stop word
         System.out.println("\nDo you want to continue?\n");
 
     }
