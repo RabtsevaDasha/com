@@ -7,10 +7,15 @@ public class exam_2 {
          Scanner sc = new Scanner(System.in);
          int num = sc.nextInt();
 
-         int sum = 0;
+         int sum1 = 0;
          for (int i = 1; i < num; i++){
-             sum+=i;
+             sum1+=i;
         }
-                System.out.println(sum);
+         int sum2 = 0;
+         for (int i = 1; i < num; i+=2) {
+            sum1 += i;
+        }
+                System.out.println(sum1);
+                System.out.println(sum2);
     }
 }
