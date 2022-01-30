@@ -14,10 +14,12 @@ public class exam_1 {
         num2 = sc.nextInt();
         System.out.print("\nEnter an operator (+, -, *, /): ");
         op = sc.next().charAt(0);
+        //use text formatting
         switch (op){
             case '+': answ = num1 + num2; break;
             case '-': answ = num1 - num2; break;
             case '*': answ = num1 * num2; break;
+                //if we divide 2 int numbers, then we will lose some data. Use double instead. And what if num2 is 0?
             case '/': answ = num1 / num2; break;
             default:  System.out.printf("Error! Enter correct operator");
                 return;
