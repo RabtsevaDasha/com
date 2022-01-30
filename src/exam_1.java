@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+//Реализуйте калькулятор с возможностью постоянного ввода числа
+
 public class exam_1 {
     public static void main(String[] args) {
         System.out.println("Введите два числа: ");
@@ -22,5 +24,7 @@ public class exam_1 {
         }
         System.out.print("\nThe result is given as follows:\n");
         System.out.printf(num1 + " " + op + " " + num2 + " = " + answ);
+        System.out.println("\nDo you want to continue?\n");
+
     }
 }
