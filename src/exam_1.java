@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exam {
+public class exam_1 {
     public static void main(String[] args) {
         System.out.println("Введите два числа: ");
         Scanner sc = new Scanner(System.in);
