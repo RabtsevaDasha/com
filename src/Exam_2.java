@@ -1,7 +1,7 @@
 import java.util.Scanner;
 //Посчитать сумму четных, нечетных и всех чисел
 
-public class exam_2 {
+public class Exam_2 {
     public static void main(String[] args) {
         System.out.print("Enter a number: ");
         Scanner scanner = new Scanner(System.in);

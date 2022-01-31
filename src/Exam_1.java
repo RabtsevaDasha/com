@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 //Реализуйте калькулятор с возможностью постоянного ввода числа
 
-public class exam_1 {
+public class Exam_1 {
     public static void main(String[] args) {
         System.out.println("Enter two numbers: ");
         Scanner sc = new Scanner(System.in);
