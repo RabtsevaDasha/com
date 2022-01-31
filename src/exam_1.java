@@ -31,7 +31,9 @@ public class exam_1 {
         String ans2 = sc.nextLine();
         System.out.println(ans2);
         op = sc.nextLine();
+//ans2.equalsIgnoreCase(...). What if I enter "hello" instead of "yes"/"no"?
         if(ans2.contains("Yes")|| ans2.contains("yes")){
+//did you test your program? You do not have a loop to repeat. You will be just cut off and the program will stop. 
             return;
         }
         if(ans2.contains("No") || ans2.contains("no")){
