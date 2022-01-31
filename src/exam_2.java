@@ -11,8 +11,8 @@ public class exam_2 {
         for (int i = 0; i < n; i++) {
             if (i % 2 == 0) {
                 evenSum += i;
-            } else oddSum += i;
-        } int sum=evenSum+oddSum;
+            } else oddSum += i;//use {..}
+        } int sum=evenSum+oddSum;//new line
         System.out.println("Sum of even numbers: "+evenSum+"\nSum of odd numbers: "+oddSum+"\nTotal sum: "+sum);
     }
 }
