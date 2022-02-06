@@ -1,3 +1,5 @@
+package less_7;
+
 import java.util.Scanner;
 //Посчитать сумму четных, нечетных и всех чисел
 
