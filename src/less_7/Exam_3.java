@@ -21,7 +21,7 @@ public class Exam_3 {
             sortInt(numbers);
         }
     }
-
+//getRandomNum
     public static int randomNum(int max, int min) {
         return (int) (Math.random() * (max - min + 1) + min);
     }
@@ -46,40 +46,45 @@ public class Exam_3 {
             random(arr);
         }
     }
-
+//initConsoleArray
     public static void console(int[] arr, Scanner sc) {
         for (int i = 0; i < arr.length; i++) {
             System.out.println("Input value of " + i + " element: ");
             arr[i] = sc.nextInt();
         }
     }
-
+//initRandomArray
     public static void random(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = randomNum(99, 5);
         }
+//another method. 
         System.out.println("Original array");
         System.out.println(Arrays.toString(arr));
     }
 
     public static int max(int[] arr) {
+//element, not el
         int el = arr[0];
         for (int i = 0; i < arr.length; i++) {
             if (el < arr[i]) {
                 el = arr[i];
             }
         }
+//move it to another method
         System.out.println("Max element: " + el);
         return el;
     }
 
     public static int min(int[] arr) {
+//element, not el
         int el = arr[0];
         for (int i = 0; i != arr.length; i++) {
             if (el > arr[i]) {
                 el = arr[i];
             }
         }
+//Print it after. Not in this method
         System.out.println("Min element: " + el);
         return el;
     }
@@ -94,12 +99,14 @@ public class Exam_3 {
                 return i;
             }
         }
+//print it after. Not in this method
         System.out.println("Index: " + -1);
         return -1;
     }
 
     public static void sortInt(int[] arr) {
         Arrays.sort(arr);
+//should be placed in another method 
         System.out.println("Array of sort: ");
         System.out.println(Arrays.toString(arr));
     }
@@ -120,7 +127,7 @@ public class Exam_3 {
         }
         return result;
     }
-
+//getArrayLength or initLength
     public static int lengthArray(Scanner sc) {
         int length = 0;
         while (length <= 0) {
@@ -129,23 +136,25 @@ public class Exam_3 {
         }
         return length;
     }
-
+//initStrArray
     public static void strArray(String[] arr, Scanner sc) {
         for (int i = 0; i < arr.length; i++) {
             System.out.println("Input value of " + (i + 1) + " word: ");
             arr[i] = sc.next();
         }
+//place it in a different method
         System.out.println("Original array");
         System.out.println(Arrays.toString(arr));
     }
-
+//make this method overloaded. You have already sorting method
     public static void sortStrArray(String[] arr) {
         Arrays.sort(arr);
+//different method
         System.out.println("Array of sort: ");
         System.out.println(Arrays.toString(arr));
     }
 
-
+//replaceLetter
     public static void replLett(String[] arr, Scanner sc) {
         boolean correct = false;
         String letter = "";
@@ -161,6 +170,7 @@ public class Exam_3 {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = arr[i].replace(letter, Integer.toString(randomNum(99, 5)));
         }
+//place printing in a different method 
         System.out.println("Array after replacement: ");
         System.out.println(Arrays.toString(arr));
     }
