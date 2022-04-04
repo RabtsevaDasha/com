@@ -8,12 +8,12 @@ public class Exam_3 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Choice array: ");
         if (initialize(sc) == 1) {
-            String[] words = new String[lengthArray(sc)];
-            strArray(words, sc);
+            String[] words = new String[initLength(sc)];
+            initStrArray(words, sc);
             sortStrArray(words);
-            replLett(words, sc);
+            replaceLetter(words, sc);
         } else {
-            int[] numbers = new int[lengthArray(sc)];
+            int[] numbers = new int[initLength(sc)];
             numsArray(numbers, sc);
             max(numbers);
             min(numbers);
@@ -22,7 +22,7 @@ public class Exam_3 {
         }
     }
 //getRandomNum
-    public static int randomNum(int max, int min) {
+    public static int getRandomNum(int max, int min) {
         return (int) (Math.random() * (max - min + 1) + min);
     }
 
@@ -41,22 +41,22 @@ public class Exam_3 {
             System.out.println("Try again!");
         }
         if (result == 1) {
-            console(arr, sc);
+            initConsoleArray(arr, sc);
         } else {
-            random(arr);
+            initRandomArray(arr);
         }
     }
 //initConsoleArray
-    public static void console(int[] arr, Scanner sc) {
+    public static void initConsoleArray(int[] arr, Scanner sc) {
         for (int i = 0; i < arr.length; i++) {
             System.out.println("Input value of " + i + " element: ");
             arr[i] = sc.nextInt();
         }
     }
 //initRandomArray
-    public static void random(int[] arr) {
+    public static void initRandomArray(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = randomNum(99, 5);
+            arr[i] = getRandomNum(99, 5);
         }
 //another method. 
         System.out.println("Original array");
@@ -65,28 +65,28 @@ public class Exam_3 {
 
     public static int max(int[] arr) {
 //element, not el
-        int el = arr[0];
+        int element = arr[0];
         for (int i = 0; i < arr.length; i++) {
-            if (el < arr[i]) {
-                el = arr[i];
+            if (element < arr[i]) {
+                element = arr[i];
             }
         }
 //move it to another method
-        System.out.println("Max element: " + el);
-        return el;
+        System.out.println("Max element: " + element);
+        return element;
     }
 
     public static int min(int[] arr) {
 //element, not el
-        int el = arr[0];
+        int element = arr[0];
         for (int i = 0; i != arr.length; i++) {
-            if (el > arr[i]) {
-                el = arr[i];
+            if (element > arr[i]) {
+                element = arr[i];
             }
         }
 //Print it after. Not in this method
-        System.out.println("Min element: " + el);
-        return el;
+        System.out.println("Min element: " + element);
+        return element;
     }
 
     public static int returnIndex(int[] arr, Scanner sc) {
@@ -128,7 +128,7 @@ public class Exam_3 {
         return result;
     }
 //getArrayLength or initLength
-    public static int lengthArray(Scanner sc) {
+    public static int initLength(Scanner sc) {
         int length = 0;
         while (length <= 0) {
             System.out.println("Input array length: ");
@@ -137,7 +137,7 @@ public class Exam_3 {
         return length;
     }
 //initStrArray
-    public static void strArray(String[] arr, Scanner sc) {
+    public static void initStrArray(String[] arr, Scanner sc) {
         for (int i = 0; i < arr.length; i++) {
             System.out.println("Input value of " + (i + 1) + " word: ");
             arr[i] = sc.next();
@@ -155,7 +155,7 @@ public class Exam_3 {
     }
 
 //replaceLetter
-    public static void replLett(String[] arr, Scanner sc) {
+    public static void replaceLetter(String[] arr, Scanner sc) {
         boolean correct = false;
         String letter = "";
         while (!correct) {
@@ -168,7 +168,7 @@ public class Exam_3 {
             System.out.println("Try again!");
         }
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = arr[i].replace(letter, Integer.toString(randomNum(99, 5)));
+            arr[i] = arr[i].replace(letter, Integer.toString(getRandomNum(99, 5)));
         }
 //place printing in a different method 
         System.out.println("Array after replacement: ");
