@@ -3,56 +3,25 @@ package Man;
 import java.util.Objects;
 
 public class Person {
-    private String name;
-    private int age;
-
-    {
-        name = "Theron";
-        age = 21;
-    }
+    String name;
+    String fullName;
+    int age;
 
     public Person() {
     }
 
-    public Person(String name, int age) {
+    public Person(String name, String fullName, int age) {
         this.name = name;
+        this.fullName = fullName;
         this.age = age;
     }
 
-    public String getName() {
-        return name;
+    void move (String name){
+        System.out.println(name + " walk");
+    }
+    void talk (String name){
+        System.out.println(name + " talk \"Hi girls!\"");
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Person person = (Person) o;
-        return getAge() == person.getAge() && Objects.equals(name, person.name);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, age);
-    }
-
-    @Override
-    public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
-    }
 }
