@@ -1,4 +1,4 @@
-package less_7;
+package Exams;
 
 import java.util.Scanner;
 
