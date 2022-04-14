@@ -20,5 +20,7 @@ public class PersonTest {
 
         person1.move("Kodi");
         person2.talk("Harry");
+
+        System.out.println(Person.getCount());
     }
 }

@@ -6,14 +6,21 @@ public class Person {
     String name;
     String fullName;
     int age;
+    static int count;
 
     public Person() {
+        count++;
     }
 
     public Person(String name, String fullName, int age) {
         this.name = name;
         this.fullName = fullName;
         this.age = age;
+        count++;
+    }
+
+    static int getCount(){
+        return count;
     }
 
     void move (String name){
